@@ -1,3 +1,18 @@
+export class holbertonClass {
+  constructor(year, location) {
+    this._year = year;
+    this._location = location;
+  }
+
+  get year() {
+    return this._year;
+  }
+
+  get location() {
+    return this._location;
+  }
+}
+
 export class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
     this._firstName = firstName;
@@ -18,21 +33,6 @@ export class StudentHolberton {
   }
 }
 
-export class holbertonClass {
-  constructor(year, location) {
-    this._year = year;
-    this._location = location;
-  }
-
-  get year() {
-    return this._year;
-  }
-
-  get location() {
-    return this._location;
-  }
-}
-
 const class2019 = new holbertonClass(2019, 'San Francisco');
 const class2020 = new holbertonClass(2020, 'San Francisco');
 
@@ -42,4 +42,10 @@ const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
 const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
 
-export const listOfStudents = [student1, student2, student3, student4, student5];
+const listOfStudents = [student1, student2, student3, student4, student5];
+
+console.log(listOfStudents);
+
+export const listPrinted = listOfStudents.map(
+  (student) => student.fullStudentDescription,
+);

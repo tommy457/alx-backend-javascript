@@ -48,3 +48,17 @@ function createEmployee(salary: string | number) {
   }
   return new Director();
 }
+
+function isDirector(employee: any) {
+  return employee instanceof Director;
+}
+
+function executeWork(employee: any) {
+
+  if (isDirector(employee)) {
+
+    console.log(employee.workDirectorTasks());
+  } else {
+    console.log(employee.workTeacherTasks());
+  }
+}

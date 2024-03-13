@@ -62,3 +62,9 @@ function executeWork(employee: any) {
     console.log(employee.workTeacherTasks());
   }
 }
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects) {
+  console.log(`Teaching ${todayClass}`);
+}

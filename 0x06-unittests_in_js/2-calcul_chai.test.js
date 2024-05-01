@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const calculateNumber = require('./1-calcul');
+const calculateNumber = require('./2-calcul_chai');
 
 describe('#calculateNumber', () => {
   it('should round the numbers and return sum of them', () => {
@@ -30,3 +30,4 @@ describe('#calculateNumber', () => {
     expect(calculateNumber(7, 2)).to.equal('Error');
   });
 });
+

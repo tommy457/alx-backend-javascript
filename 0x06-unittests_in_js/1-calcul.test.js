@@ -27,10 +27,10 @@ describe('#calculateNumber', () => {
   });
 
   it('should return undifined if the type is not: SUM, DIVIDE or SUBTRACT.', () => {
-    assert.equal(calculateNumber('MULTIPLY', 7, 2), undefined);
+    assert.equal(calculateNumber('MULTIPLY', 7, 2), 'Error');
   });
 
   it('should return undifined if the type is not passed', () => {
-    assert.equal(calculateNumber(7, 2), undefined);
+    assert.equal(calculateNumber(7, 2), 'Error');
   });
 });

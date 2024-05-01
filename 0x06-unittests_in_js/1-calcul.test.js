@@ -7,7 +7,7 @@ describe('#calculateNumber', () => {
   });
 
   it('should round the second number and return difference of them', () => {
-    assert.equal(calculateNumber('SUBTRACT', 1, 2.9), 2);
+    assert.equal(calculateNumber('SUBTRACT', 1, 2.9), -2);
   });
 
   it('should round the first number and return division of them', () => {
